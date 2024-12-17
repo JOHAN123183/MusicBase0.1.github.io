@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicBase</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/MusicBaseLogo__3_-removebg-preview.png">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html"><div class="logo"><img src="img/LOGO.png" width="120px" height="40px"></div></a>
+            <ul class="nav-links">
+             <li class="dropdown">
+                <a href="" class="dropbtn">Explorar</a>
+                    <div class="dropdown-content">
+                        <a href="explore-artist.html">Artistas</a>
+                        <a href="explore-music.html">Musica</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Géneros</a>
+                    <div class="dropdown-content">
+                        <a href="explorar-pop.html">Pop</a>
+                        <a href="explorar-rock.html">Rock</a>
+                        <a href="explore-jazz.html">Jazz</a>
+                    </div> 
+                    <li class="dropdown">
+             <a href="contact.html" class="dropbtn">Contacto</a>
+            </ul>
+            <div class="search-container">
+        <input type="text" id="search" class="search-input" placeholder="Buscar...">
+        <button class="search-button" id="search-button"><i class="bi bi-search"></i></button>
+    </div>
+    </header>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close-button">&times;</span>
+          <p id="modal-text"></p>
+        </div>
+      </div>      
+    <section class="banner">
+        <div class="banner-content">
+            <p><h1>Descubre nuevos gustos musicales</h1></p>
+            <p>Cientas de nuevas melodias para descubrir</p>
+        </div>
+    </section>
+    <main>
+        <section class="carousel">
+            <div class="carousel-container">
+                <a href="explorar-pop.html" class="card">
+                    <img src="img/pop.jpeg" alt="Jack Single">
+                    <h3>Musica Pop</h3>
+                    <p></p>
+                    <button>Hechar un vistazo</button>
+                </a>
+                <a href="explorar-rock.html" class="card">
+                    <img src="img/rock.jpeg" alt="Jack Honey">
+                    <h3>Rock</h3>
+                    <p></p>
+                    <button>Escuchar</button>
+                </a>
+                <a href="explore-jazz.html" class="card">
+                    <img src="img/jazz.avif" alt="Pavel Nuñez">
+                    <h3>Jazz</h3>
+                    <p></p>
+                    <button>Escuchar</button>
+                </a>
+        </section>
+    </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            
+            <div class="footer-logo">
+                <h3>MusicBase</h3>
+                <p>Tu destino para descubrir, disfrutar y explorar música.</p>
+            </div>
+            
+            <div class="footer-social">
+                <a href="https://www.facebook.com/?locale=es_LA" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.google.com/" aria-label="Google Plus"><i class="bi bi-google"></i></a>
+                <a href="https://www.youtube.com/" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            </div>
+    
+            <div class="footer-divider"></div>
+    
+            <div class="footer-bottom">
+                <p>&copy; 2024 MusicBase. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="searchbar.js"></script>
+</body>
+</html>
+

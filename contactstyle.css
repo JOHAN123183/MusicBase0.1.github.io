@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:#2f4858;
+    color: #010101;
+}
+
+header {
+    background-color: #170971a1;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: #0d035158;
+    border-radius: 9px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo :hover{
+    transform: scale(1.4); 
+
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.nav-links a:hover {
+    color: hsl(128, 100%, 50%);
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #0088ff8d;
+    top: 100%;
+    left: 0;
+    min-width: 150px;
+    box-shadow: 0 8px 16px rgba(4, 247, 255, 0.268);
+    z-index: 1;
+    border-radius: 9px;
+}
+
+.dropdown-content a {
+    color: #000000;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: hsla(182, 100%, 50%, 0.462);
+    border-radius: 9px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    overflow: hidden;
+    transition: border-color 0.3s ease;
+  }
+  
+  .search-container:hover {
+    border-color: #0078d7;
+  }
+  
+  .search-input {
+    border: none;
+    padding: 10px 15px;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  .search-button {
+    background-color: #0078d7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-button:hover {
+    background-color: #005bb5;
+  }
+
+.search-bar button:hover {
+    background-color: hsla(180, 100%, 50%, 0.462);
+}
+
+/* Estilo para el modal */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+.contact-form {
+    max-width: 500px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #007BFF;
+}
+
+hr {
+    width: 50px;
+    border: 2px solid #007BFF;
+    margin: 10px auto 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+/* Footer */
+.footer {
+    background-color: #160971;
+    color: #fff; /* Texto blanco */
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para darle profundidad */
+    border-radius: 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-logo h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.footer-logo p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.footer-social {
+    display: flex;
+    gap: 20px; /* Espaciado entre iconos */
+}
+
+.footer-social a {
+    color: #fff; /* Íconos blancos */
+    font-size: 1.2rem; /* Tamaño de los iconos */
+    text-decoration: none; /* Sin subrayado */
+    transition: color 0.3s;
+}
+
+.footer-social a:hover {
+    color: #2cbd00; /* Efecto hover azul claro */
+}
+
+.footer-nav {
+    display: flex;
+    gap: 15px; /* Espaciado entre los enlaces */
+    margin-bottom: 20px; /* Espaciado con la línea */
+}
+
+.footer-nav a {
+    text-decoration: none; /* Sin subrayado */
+    color: #fff; /* Enlaces blancos */
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+    color: #00bdbd; /* Efecto hover azul claro */
+}
+
+/* Línea divisoria */
+.footer-divider {
+    border-top: 1px solid #ccc; /* Línea gris claro */
+    margin: 20px auto;
+    width: 80%; /* Ancho de la línea */
+}
+
+/* Copyright */
+.footer-bottom {
+    margin-top: 10px;
+    font-size: 0.85rem;
+    color: #fff; /* Texto blanco */
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.85rem;
+}
+
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-social a {
+        margin: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+
+main {
+    padding: 20px;
+}
+
+main h2 {
+    margin-bottom: 10px;
+}
+
+main p {
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .banner-content h1 {
+        font-size: 2rem;
+    }
+
+    .banner-content p {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        font-size: 0.9rem;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

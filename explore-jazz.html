@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicBase</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="perfiles.css">
+    <link rel="icon" href="img/MusicBaseLogo__3_-removebg-preview.png">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html"><div class="logo"><img src="img/LOGO.png" width="120px" height="40px"></div></a>
+            <ul class="nav-links">
+             <li class="dropdown">
+                <a href="" class="dropbtn">Explorar</a>
+                    <div class="dropdown-content">
+                        <a href="explore-artist.html">Artistas</a>
+                        <a href="explore-music.html">Musica</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Géneros</a>
+                    <div class="dropdown-content">
+                        <a href="explorar-pop.html">Pop</a>
+                        <a href="explorar-rock.html">Rock</a>
+                        <a href="explore-jazz.html">Jazz</a>
+                    </div> 
+                    <li class="dropdown">
+             <a href="contact.html" class="dropbtn">Contacto</a>
+            </ul>
+            <div class="search-container">
+        <input type="text" id="search" class="search-input" placeholder="Buscar...">
+        <button class="search-button" id="search-button"><i class="bi bi-search"></i></button>
+    </div>
+    </header>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close-button">&times;</span>
+          <p id="modal-text"></p>
+        </div>
+      </div>  
+<body>
+    <!-- Contenedor principal -->
+    <main>
+        <section class="carousel">
+            <div class="carousel-container">
+
+                <div class="card" 
+                     data-src="music/Just the Two of Us (feat. Bill Withers).mp3" 
+                     data-title="Just the Two of Us" 
+                     data-artist="Grover Washington" 
+                     data-img="img/two.jpeg">
+                    <img src="img/two.jpeg" alt="Grover Washington">
+                    <h3>Grover Washington</h3>
+                    <h4>Just the Two of Us</h4>
+                    <button>Escuchar</button>
+                </div>
+
+                <div class="card" 
+                     data-src="music/Fly Me To The Moon (2008 Remastered).mp3" 
+                     data-title="Fly Me To The Moon"
+                     data-artist="Frank Sinatra" 
+                     data-img="img/moon.jpg">
+                    <img src="img/moon.jpg" alt="Frank Sinatra">
+                    <h3>Frank Sinatra</h3>
+                    <h4>Fly Me To The Moon</h4>
+                    <button>Escuchar</button>
+                </div>
+
+                <div class="card" 
+                     data-src="music/L-O-V-E.mp3" 
+                     data-title="L-O-V-E" 
+                     data-artist="Nat King Cole" 
+                     data-img="img/Screenshot 2024-12-15 11.47.33 PM.png">
+                    <img src="img/Screenshot 2024-12-15 11.47.33 PM.png" alt="Nat King Cole">
+                    <h3>Nat King Cole</h3>
+                    <h4>L-O-V-E</h4>
+                    <button>Escuchar</button>
+                </div>
+
+                <div class="card" 
+                     data-src="music/My Way (2008 Remastered).mp3" 
+                     data-title="My Way" 
+                     data-artist="Frank Sinatra" 
+                     data-img="img/MY WAY.jpeg">
+                    <img src="img/MY WAY.jpeg" alt="Frank Sinatra">
+                    <h3>Frank Sinatra</h3>
+                    <h4>My Way</h4>
+                    <button>Escuchar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<div id="modal" class="modal"></div>
+<div id="overlay" class="overlay"></div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h3>MusicBase</h3>
+                <p>Tu destino para descubrir, disfrutar y explorar música.</p>
+            </div>
+            
+            <div class="footer-social">
+                <a href="https://www.facebook.com/?locale=es_LA" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.google.com/" aria-label="Google Plus"><i class="bi bi-google"></i></a>
+                <a href="https://www.youtube.com/" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 MusicBase. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="modal.js"></script>
+</body>
+</html>
+
